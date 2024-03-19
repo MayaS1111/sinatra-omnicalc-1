@@ -10,12 +10,12 @@
           <%= params.fetch("users_number").to_i%>
         </dd>
 
-        <dt>Square</dt>
+        <dt>Square root</dt>
         <dd>
-          <%= params.fetch("users_number").to_i ** 2%>
+          <%= Math.sqrt(params.fetch("users_number").to_f)%>
         </dd>
       </dl>
-      <a href="/square/new">
+      <a href="/square_root/new">
         Calculate another square
       </a>
     </form>
