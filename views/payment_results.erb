@@ -7,22 +7,22 @@
       <dl>
         <dt>APR</dt>
         <dd>
-          <%= params.fetch("users_number_apr").to_i.to_fs(:percentage, { :precision => 4 }) %>
+          <%= @apr %>
         </dd>
 
         <dt>Number of years</dt>
         <dd>
-          <%= params.fetch("users_number_years").to_i %>
+          <%= @years %>
         </dd>
 
         <dt>Principal</dt>
         <dd>
-          <%= params.fetch("users_number_principal").to_i.to_fs(:currency)%>
+          <%= @principal%>
         </dd>
 
         <dt>Payment</dt>
         <dd>
-          <%=  %>
+          <%=  @payment %>
         </dd>
       </dl>
       <a href="/payment/new">
